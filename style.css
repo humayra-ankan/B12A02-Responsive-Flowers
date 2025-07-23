@@ -91,6 +91,9 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  padding: 20px;
+ 
 }
 .plants-title {
   font-size: 3em;
@@ -102,19 +105,37 @@ nav ul li a {
   max-width: 700px;
   color: rgba(0, 0, 0, 0.5);
 }
-.plants-card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 20px;
-
-  padding:10px;
+.plants-section{
+    width: 100%;
 }
-.plants-card{border: 2px solid black;}
+.plants-card-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    
+    gap: 10px;
+}
+
 .plants-card img{
     width: 100%;
+    height: auto;
+    object-fit: contain;
 } 
-
+.plants-description{
+    font-size: 1.375em;
+}
+.flower-price{
+    font-weight: bold;
+}
+.add-cart-btn{
+    width: 100%;
+    background-color: rgba(233, 90, 8, 1);
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+    padding: 19px 80px;
+    border: none;
+}
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
   .hidden {
@@ -138,13 +159,16 @@ nav ul li a {
   .banner-subtitle {
     font-size: 0.875em;
   }
-  .plants-card-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 20px;
-  
+
+ .plants-card-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    overflow: hidden;
+    gap: 10px;
 }
+
+}
+
 
 @media screen and (min-width: 576px) and (max-width: 786px) {
   .banner-title {
@@ -153,5 +177,19 @@ nav ul li a {
   .banner-subtitle {
     font-size: 0.875em;
   }
-
+.plants-card-container{
+       grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    
+    gap: 10px;
+}
+}
+@media screen and (min-width: 786px) and (max-width: 1140px){
+    
+.plants-card-container{
+       grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    
+    gap: 10px;
+}
 }
