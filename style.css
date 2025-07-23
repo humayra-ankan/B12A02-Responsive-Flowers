@@ -84,6 +84,37 @@ nav ul li a {
   font-size: 1.375em;
   color: rgba(0, 0, 0, 0.5);
 }
+/* plants-section */
+.plants-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.plants-title {
+  font-size: 3em;
+}
+.plants-title span {
+  color: rgba(233, 90, 8, 1);
+}
+.plants-subtitle {
+  max-width: 700px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.plants-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+
+  padding:10px;
+}
+.plants-card{border: 2px solid black;}
+.plants-card img{
+    width: 100%;
+} 
+
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
   .hidden {
@@ -96,7 +127,7 @@ nav ul li a {
   }
   .banner-content {
     width: 100%;
-    padding:0px 16px;
+    padding: 0px 16px;
   }
   .banner-image {
     width: 100%;
@@ -104,18 +135,23 @@ nav ul li a {
   .banner-title {
     font-size: 1.5em;
   }
-  .banner-subtitle{
+  .banner-subtitle {
     font-size: 0.875em;
   }
+  .plants-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  
 }
-
 
 @media screen and (min-width: 576px) and (max-width: 786px) {
-    .banner-title {
+  .banner-title {
     font-size: 2.5em;
   }
-  .banner-subtitle{
+  .banner-subtitle {
     font-size: 0.875em;
   }
-}
 
+}
