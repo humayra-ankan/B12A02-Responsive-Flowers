@@ -1,0 +1,59 @@
+/* font styles */
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: bold;
+  font-variation-settings:
+    "wdth" 100;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:normal;
+  font-style: normal;
+}
+
+/* shared styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* header section */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.logo{
+    padding-left: 16px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:34px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 16px;
+}
+nav ul li a{
+    text-decoration: none;
+
+}
+
+/* responsive for mobile */
+@media screen and (max-width:576px){
+    .hidden{
+        display:none;
+    }
+
+}
