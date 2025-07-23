@@ -2,58 +2,116 @@
 .noto-serif {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
-  font-style: bold;
-  font-variation-settings:
-    "wdth" 100;
+  font-weight: bold;
+  font-variation-settings: "wdth" 100;
 }
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight:normal;
+  font-weight: normal;
   font-style: normal;
 }
 
 /* shared styles */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    max-width: 1140px;
-    margin: 0 auto;
+body {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 /* header section */
 
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-top: 30px;
-    
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
-.logo{
-    padding-left: 16px;
+.logo {
+  padding-left: 16px;
 }
-nav ul{
-    list-style: none;
-    display: flex;
-    gap:34px;
-    justify-content: center;
-    align-items: center;
-    padding-right: 16px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 34px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 16px;
 }
-nav ul li a{
-    text-decoration: none;
-
+nav ul li a {
+  text-decoration: none;
 }
 
+/* banner section */
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: rgb(182, 172, 191);
+  margin: 100px 0px 0px;
+
+  width: 100%;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-left: 5px;
+  padding-left: 5px;
+  width: 50%;
+}
+.banner-image {
+  width: 50%;
+}
+.banner-image img {
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+.banner-title span {
+  color: rgba(233, 90, 8, 1);
+}
+.banner-title {
+  font-size: 3em;
+}
+.banner-subtitle {
+  font-size: 1.375em;
+  color: rgba(0, 0, 0, 0.5);
+}
 /* responsive for mobile */
-@media screen and (max-width:576px){
-    .hidden{
-        display:none;
-    }
+@media screen and (max-width: 576px) {
+  .hidden {
+    display: none;
+  }
+  .banner-container {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-image {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 1.5em;
+  }
+  .banner-subtitle{
+    font-size: 0.875em;
+  }
+}
 
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+  .banner-content {
+    width: 33%;
+  }
 }
