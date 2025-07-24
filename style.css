@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 
-body {
+main {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -183,6 +183,15 @@ nav ul li a {
 .p-lover-content{
   font-size: 1.25em;
 }
+/* join section */
+
+
+
+
+
+
+
+
 /* footer styles */
 footer{
   display:flex;
