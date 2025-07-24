@@ -183,6 +183,17 @@ nav ul li a {
 .p-lover-content{
   font-size: 1.25em;
 }
+/* footer styles */
+footer{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px; 
+}
+
+
+
+
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
   .hidden {
@@ -230,6 +241,9 @@ nav ul li a {
 .p-lover-right{
   width: 50%;
 }
+footer{
+  flex-direction: column;
+}
 }
 
 /* responsive for tab */
@@ -252,6 +266,9 @@ nav ul li a {
 .p-lover-section{
   flex-direction: column;
  
+}
+footer{
+  flex-direction: column;
 }
 }
 
