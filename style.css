@@ -190,7 +190,29 @@ footer{
   flex-wrap: wrap;
   padding: 20px; 
 }
-
+.footer-1{
+  height: 179px;
+  width:359px;
+}
+.footer-text{
+  color:rgba(0, 0, 0, 0.5);
+}
+.footer-2 ul {
+  list-style: none;
+}
+.footer-2 ul li a{
+  text-decoration: none;
+   color:rgba(0, 0, 0, 0.5)
+}
+.footer-3{
+  display: flex;
+  gap: 24px;
+}
+.footer-logo{
+  height: 36px;
+  width: 36px;
+  object-fit: contain;
+}
 
 
 
