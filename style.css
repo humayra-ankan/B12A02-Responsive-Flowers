@@ -45,6 +45,8 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
+    color: rgba(0, 0, 0, 0.937);
+
 }
 
 /* banner section */
@@ -53,7 +55,6 @@ nav ul li a {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  /* background-color: rgb(182, 172, 191); */
   margin: 100px 0px 0px;
 
   width: 100%;
@@ -91,6 +92,7 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 10px;
 
   padding: 20px;
  
@@ -105,8 +107,8 @@ nav ul li a {
   max-width: 700px;
   color: rgba(0, 0, 0, 0.5);
 }
-.plants-section{
-    width: 100%;
+.plants-content{
+  padding:50px;
 }
 .plants-card-container{
     width: 100%;
@@ -115,6 +117,9 @@ nav ul li a {
     grid-template-rows: repeat(2, auto);
     
     gap: 10px;
+}
+.plants-card{
+  width: 100%;
 }
 
 .plants-card img{
@@ -130,6 +135,7 @@ nav ul li a {
 }
 .add-cart-btn{
     width: 100%;
+    font-weight: 600px;
     background-color: rgba(233, 90, 8, 1);
     color: rgba(255, 255, 255, 1);
     white-space: nowrap;
@@ -162,13 +168,20 @@ nav ul li a {
 
  .plants-card-container{
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    overflow: hidden;
     gap: 10px;
 }
+.plants-description{
+    font-size: 1em;
+    padding: 5px;
+}
+.add-cart-btn{
+  padding: 19px 30px;
 
 }
 
+}
+
+/* responsive for tab */
 
 @media screen and (min-width: 576px) and (max-width: 786px) {
   .banner-title {
@@ -179,17 +192,15 @@ nav ul li a {
   }
 .plants-card-container{
        grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);   
     
-    gap: 10px;
 }
 }
+
+
 @media screen and (min-width: 786px) and (max-width: 1140px){
     
 .plants-card-container{
-       grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    
-    gap: 10px;
+       grid-template-columns: repeat(3, 1fr);     
 }
 }
