@@ -186,7 +186,68 @@ nav ul li a {
 }
 /* join section */
 
+.join-section {
+  width: 100%;
+  min-height: 533px;
+  background-image: url('./assets/news-letter-bg.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
 
+
+.join-content {
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  width: 100%;
+}
+
+
+.join-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+
+.input-section {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.email-input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+
+.subscribe-button {
+  background-color: #f25c05;
+  color: white;
+  padding: 0 25px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+ 
+}
+
+.subscribe-button:hover {
+  background-color: #d94d00;
+}
 
 
 
