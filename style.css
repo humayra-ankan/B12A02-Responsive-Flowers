@@ -1,3 +1,4 @@
+
 /* font styles */
 .noto-serif {
   font-family: "Noto Serif", serif;
@@ -19,7 +20,7 @@
   box-sizing: border-box;
 }
 
-main {
+body {
   max-width: 1140px;
   margin: 0 auto;
 }
