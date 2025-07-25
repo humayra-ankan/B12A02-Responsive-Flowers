@@ -186,10 +186,11 @@ nav ul li a {
 }
 /* join section */
 
+
 .join-section {
   width: 100%;
-  min-height: 533px;
-  background-image: url('./assets/news-letter-bg.png'); 
+  min-height: 500px;
+  background-image: url('./assets/news-letter-bg.png'); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,13 +210,13 @@ nav ul li a {
 
 
 .join-title {
-  font-size: 2.5em;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
 
-.input-section {
+.input-holder {
   display: flex;
   width: 100%;
   max-width: 600px;
@@ -240,14 +241,11 @@ nav ul li a {
   color: white;
   padding: 0 25px;
   border: none;
-  font-size: 1em;
+  font-size: 16px;
   cursor: pointer;
- 
+
 }
 
-.subscribe-button:hover {
-  background-color: #d94d00;
-}
 
 
 
