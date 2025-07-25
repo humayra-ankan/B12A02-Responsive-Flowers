@@ -11,6 +11,21 @@
   font-weight: normal;
   font-style: normal;
 }
+/* animation */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Spin effect for the badge image */
+
+
+
 
 /* shared styles */
 * {
@@ -171,6 +186,7 @@ nav ul li a {
   right: -150px;
   width: 286px;
   height: 286px;
+  animation: spin 5s ease-in-out infinite;
 }
 
 .pl-content {
